@@ -1,1 +1,8 @@
-nodeVersion: "18.17.0"
+services:
+  - type: web
+    name: 4n8n16
+    env: node
+    buildCommand: "pnpm install"
+    startCommand: "pnpm run start"
+    nodeVersion: "18.17.0"  # или другая версия, которая поддерживается n8n
+    port: 8080
